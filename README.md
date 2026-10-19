@@ -1,58 +1,32 @@
-# Containing Files
+[Home - Workshops about the ABAP Cloud development model (ABAP Cloud)](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/README.md)
 
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-TM260)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-TM260)
 
-2. The REUSE.toml file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the REUSE.toml in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
+# TM260	Migrate and modernize your custom code using RISE with SAP and agentic AI
 
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
+Experience the RISE with SAP journey moving custom extensions from SAP ERP Central Component to SAP Cloud ERP Private. See how the Custom Code Migration Agent in SAP Joule for Developers streamlines custom code adaptation leveraging MCP tools and AI for ABAP in custom code tools. Then, modernize your custom code following the clean core approach.
 
-# Session ID - Session Title
-
-## Description
-
-This repository contains the material for the SAP TechEd 2026 session called Session ID - Session Title.  
-
-## Overview
-
-This session introduces attendees to...
-
-## Requirements
-
-The requirements to follow the exercises in this repository are...
+ <br>![](/exercises/ex0/images/tm260_ex0_overview.png)
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+- [Exercise 1 - Migrate your custom code from ECC to SAP S/4HANA using SAP Joule for Developers, ABAP AI capabilities](exercises/ex1/)
+    - [Exercise 1.1 - Use Custom Code Migration app on SAP BTP to analyze your code in ECC system for SAP S/4HANA](exercises/ex1#exercise-11-use-custom-code-migration-app-on-sap-btp-to-analyze-your-code-in-ecc-system-for-sap-s4hana)
+    - [Exercise 1.2 - Analyze and adapt your code on SAP S/4HANA system using AI capabilities](exercises/ex1#exercise-12-analyze-and-adapt-your-code-on-sap-s4hana-system-using-ai-capabilities)
+- [Exercise 2 - Adapt your custom code to clean core](exercises/ex2/)
+    - [Exercise 2.1 - Get to know the ABAP program about Clean Core planning and understand the clean core issues](exercises/ex2#exercise-21-get-to-know-the-abap-program-about-clean-core-planning-and-understand-the-clean-core-issues)
+    - [Exercise 2.2 - Use GitHub Copilot and ADT MCP tools to migrate the ABAP program about clean core planning to clean core level B](exercises/ex2#exercise-22-use-github-copilot-and-adt-mcp-tools-to-migrate-the-abap-program-about-clean-core-planning-to-clean-core-level-b)
+- [Exercise 3 - Modernize your SAP GUI-based ABAP program about clean core planning with RAP and SAP Fiori UI](exercises/ex3/)
+    - [Exercise 3.1 - Use GitHub Copilot and ADT MCP tools to create CDS View for the data of the Clean Core Planning ABAP program](exercises/ex3#exercise-31-use-github-copilot-and-adt-mcp-tools-to-create-cds-view-for-the-data-of-the-clean-core-planning-abap-program)
+    - [Exercise 3.2 - Use GitHub Copilot and ADT MCP tools to generate a modern SAP Fiori- and RAP-based Clean Core Planning application on top of the CDS view](exercises/ex3#exercise-32-use-github-copilot-and-adt-mcp-tools-to-generate-a-modern-sap-fiori-and-rap-based-clean-core-planning-application-on-top-of-the-cds-view)
+- [LABS PREVIEW Live Demo - Automate custom code migration using ABAP Custom Code Migration agent](exercises/ex4/)
 
 ## Contributing
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
-
-## Code of Conduct
-Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
-
-## How to obtain support
-
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
-Copyright (20xx-)20xx SAP SE or an SAP affiliate company and <your-project> contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/<your-project>).
+
+Copyright (c) 2026 SAP SE or an SAP affiliate company and teched2026-TM260 contributors. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file; you may not use any file of this project except in compliance with the License.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the LICENSE for the specific language governing permissions and limitations under the License.
