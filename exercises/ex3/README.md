@@ -17,11 +17,11 @@ In this exercise, you will moderinize the SAP GUI-based ABAP program about the *
 
 By following these steps you will use GitHub Copilot and ADT MCP tools to create the CDS view for reading the data of the SAP GUI ABAP program for **Clean Core Planning** .
 
-1. Ask the GitHub Copilot in chat to generate the CDS view by providing the following prompt: **Create a CDS view based on the view I_CUSTABAPOBJDIRECTORYENTRY and join the data from table **`ZTM260_CCP_###`**. Use the naming convention ZTM260 at the beginning and the number _### at the end**. The GitHub Copilot will use the ADT MCP tools and create and activate the CDS view. 
+1. Ask the GitHub Copilot in chat to generate the CDS view by providing the following prompt: **Create a CDS view based on the view I_CUSTABAPOBJDIRECTORYENTRY and join the data from table **`ZTM260_CCP_###`**. Use the package **`ZTM260_EXERCISES_###`**. Use the naming convention ZTM260 at the beginning and the number _### at the end**. The GitHub Copilot will use the ADT MCP tools and create and activate the CDS view. 
 
    <br>![](/exercises/ex3/images/tm260_ex3_1_generate_cds_view.png)
    
-2. Go to your newly created CDS view **`ZTM260_CCP_JOIN_###`** in your package **`ZTM260_EXERCISES_###`**, double click to display it in the source code editor and use the context menu *Open With > Data Preview* to verify that the same data are also displayed as in the SAP GUI ABAP program.
+2. Go to your newly created CDS view **`ZTM260_CCP_JOIN_###`** in your package **`ZTM260_EXERCISES_###`** and use **F8** (or the context menu *Open With > Data Preview*) to display the data. Use the table column *Add Filter* to add *DevelopmentPackage* filter and enter the package **ZTM260_CLEAN_CORE_SAMPLES**. Verify that the same data are also displayed as in the SAP GUI ABAP program.
  
    <br>![](/exercises/ex3/images/tm260_ex3_2_preview_cds_view.png)
 
@@ -55,6 +55,6 @@ By following these steps you will use the GitHub Copilot and ADT MCP tools to ge
 ### Summary
 You have modernized the existing SAP GUI-based ABAP program for **Clean Core Planning** by creating a new modern SAP Fiori and RAP-based application using GitHub Copilot and ADT MCP tools on top of the persistency of the ABAP program.
 
-Go to start - [TM260 Migrate and modernize your custom code from ECC to RISE with agentic AI ](../../README.md)
+Continue to - [Exercise 4 - Analyze custom code adaptation results of the ABAP Custom Code Migration agent](../ex4/README.md)
 
 

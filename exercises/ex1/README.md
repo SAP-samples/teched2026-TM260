@@ -1,7 +1,7 @@
 # Exercise 1 - Migrate your custom code from SAP ECC to SAP S/4HANA using SAP Joule for Developers, ABAP AI capabilities
 
 ### Scenario Overview
-In this exercise you will learn how to speed up understanding of the custom code in an SAP ECC system and the issues, which must be resolved in your custom code during SAP S/4HANA conversion. Thereby you will utilize the Custom Code Migration app on SAP BTP and the AI-based skills to understand the code and the SAP S/4HANA related ABAP test cockpit (ATC) issues. You will also find out the issues which can be solved already on your SAP ECC system and learn how to fix them. Next you will use the ABAP development tools for Eclipse (ADT) for code analysis and adaptation on SAP S/4HANA system. Thereby you will utilize SAP Joule for Developers, ABAP AI capabilities to understand the custom code, the findings of the ATC check run for S/4HANA readiness and get code proposals for AI-based code fixes. After that you utilize the ADT MCP tools to apply AI-based code fixes. Finally you will learn in the live demo of the labs preview how the ABAP Custom Code Migration agent will automate custom code migration to SAP S/4HANA compliant code.
+In this exercise you will learn how to speed up understanding of the custom code in an SAP ECC system and the issues, which must be resolved in your custom code during SAP S/4HANA conversion. Thereby you will utilize the Custom Code Migration app on SAP BTP and the AI-based skills to understand the code and the SAP S/4HANA related ABAP test cockpit (ATC) issues. You will also find out the issues which can be solved already on your SAP ECC system and learn how to fix them. Next you will use the ABAP development tools for Eclipse (ADT) for code analysis and adaptation on SAP S/4HANA system. Thereby you will utilize SAP Joule for Developers, ABAP AI capabilities to understand the custom code, the findings of the ATC check run for S/4HANA readiness and get code proposals for AI-based code fixes. After that you utilize the ADT MCP tools to apply AI-based code fixes. Finally you will use the ABAP Custom Code Migration agent on SAP Business AI Platform to automate your custom code migration to SAP S/4HANA compliant code.
 
 ## 🔴 Important Information
 
@@ -49,9 +49,11 @@ By following these steps you will get to know the Custom Code Migration app on S
  
    <br>![](/exercises/ex1/images/tm260_ex1_7_code_explain.png)
 
-   You will get the information about.....TODO: code explain screenshot
+   You will get the information about the business purpose and processing logic of the ABAP program **`ZTM260_MATERIAL_READ_###`**. Scroll down and use the **Explain business purpose in detail** and **Explain processing logic in detail** options to understand the ABAP program in all details.
    
-8. Now use the AI-based explanation of the SAP S/4HANA related ATC issues in the Custom Code Migration app. This feature is targeted to help you grasp the root cause quickly without having to read through numerous SAP S/4HANA simplification information materials. In the *Findings* table select the line with the type conflict ATC issue in the ABAP program **`ZTM260_MATERIAL_READ_###`** and click on the *ATC Explain*:
+   <br>![](/exercises/ex1/images/tm260_ex1_8_show_code_explain.png)
+   
+9. Now use the AI-based explanation of the SAP S/4HANA related ATC issues in the Custom Code Migration app. This feature is targeted to help you grasp the root cause quickly without having to read through numerous SAP S/4HANA simplification information materials. In the *Findings* table select the line with the type conflict ATC issue in the ABAP program **`ZTM260_MATERIAL_READ_###`** and click on the *ATC Explain*:
 
     <br>![](/exercises/ex1/images/tm260_ex1_9_atc_explain_1_fle.png)
 
@@ -69,11 +71,11 @@ By following these steps you will get to know the Custom Code Migration app on S
 
    Select further lines in the *Findings* table and try to understand the source code and SAP S/4HANA related ATC issues using *Code Explain* and *ATC Explain* AI-based features in the Custom Code Migration app.
 
-9. Now take a look again at visual filters and discover in the filter for **Findings by Quick Fix Availability** the new flter option *AI Quick Fixes*. Use this filter option to display the SAP S/4HANA related ATC findings in the code samples of your package, for which AI-based code proposals (AI quick fixes) are available:
+10. Now take a look again at visual filters and discover in the filter for **Findings by Quick Fix Availability** the new flter option *AI Quick Fixes*. Use this filter option to display the SAP S/4HANA related ATC findings in the code samples of your package, for which AI-based code proposals (AI quick fixes) are available:
 
     <br>![](/exercises/ex1/images/tm260_ex1_13_ai_fixes.png)
    
-10. Now remove (unselect) the **Findings by Quick Fix Availability** filter and discover the new visual filter **Findings by Transferable Quick Fix**. This filter is related to the ATC findings, which can be fixed already on your SAP ECC system prior to the SAP S/4HANA system conversion. Currently transferable quick fixes are available for the ATC issues related to data elements, which were removed in SAP S/4HANA, and for missing ORDER BY in SELECT statements.
+11. Now remove (unselect) the **Findings by Quick Fix Availability** filter and discover the new visual filter **Findings by Transferable Quick Fix**. This filter is related to the ATC findings, which can be fixed already on your SAP ECC system prior to the SAP S/4HANA system conversion. Currently transferable quick fixes are available for the ATC issues related to data elements, which were removed in SAP S/4HANA, and for missing ORDER BY in SELECT statements.
     
     <br>![](/exercises/ex1/images/tm260_ex1_14_ecc_fixes.png)
     
@@ -113,7 +115,11 @@ By following these steps you will first run ATC to analyze your custom code pack
 
 As next you will try out the basic Joule skills for code migration: code explanation, ATC findings explanation, and AI-based code fixes.
 
-5.	Now choose the same ABAP program **`ZTM260_MATERIAL_READ_###`** which you used in the Exercise 1.1 to try out the AI-based features in the Custom Code Migration app, to try out the AI-based features for code migration in the ABAP development tools for Eclipse. Start with the AI-based explanation of the code. For this use the context menu *Joule > Explain*:
+5. Now execute the ABAP program **`ZTM260_MATERIAL_READ_###`** using the context menu *Run As > ABAP Application (F8)*. Enter the material number *123* for example and click on the *Execute* button. You will get the ABAP runtime error, indicating, that there is a type conflict during a function module call. This is an S/4HANA-related issue that illustrates a common scenario in which custom code that previously worked in an ECC system no longer functions correctly in S/4HANA due to simplifications in S/4HANA, resulting in runtime dumps, syntax errors, and other issues. These issues must be fixed.
+
+    <br>![](/exercises/ex1/images/tm260_ex1_26_run_dump.png)
+
+6.	Now use the ABAP program **`ZTM260_MATERIAL_READ_###`** to try out the AI-based features for code migration in the ABAP development tools for Eclipse. Start with the AI-based explanation of the code. For this use the context menu *Joule > Explain*:
 
    <br>![](/exercises/ex1/images/tm260_ex1_20_joule_explain.png)
 
@@ -121,7 +127,7 @@ Joule will explain the business purpose and processing logic and will list all c
 
    <br>![](/exercises/ex1/images/tm260_ex1_21_joule_explain_result.png)
 
-6. Now perform the SAP S/4HANA readiness checks with ATC for your package **`ZTM260_EXERCISES_###`**. For this use the context menu *Run As > ABAP Test Cockpit With...*, enter the **S4HANA_READINESS_2025** check variant and execute ATC check run.
+7. Now perform the SAP S/4HANA readiness checks with ATC for your package **`ZTM260_EXERCISES_###`**. For this use the context menu *Run As > ABAP Test Cockpit With...*, enter the **S4HANA_READINESS_2025** check variant and execute ATC check run.
 
    <br>![](/exercises/ex1/images/tm260_ex1_22_run_atc_pkg.png)
    
@@ -129,7 +135,7 @@ Joule will explain the business purpose and processing logic and will list all c
    
    <br>![](/exercises/ex1/images/tm260_ex1_23_joule_support.png)
 
-7. Now try out the Joule support for the ATC findings of the chosen ABAP program **`ZTM260_MATERIAL_READ_###`**. For the convenience purposes use in the ATC results table on the *Findngs* the context menu *Group By > Object* to group the issues by the ABAP source code objects where they occur. Then select the ABAP program **`ZTM260_MATERIAL_READ_###`** and use the context menu *Joule > Explain* on its first ATC finding. Read and understand the explanation provided by Joule along with proposed resolution steps.
+8. Now try out the Joule support for the ATC findings of the chosen ABAP program **`ZTM260_MATERIAL_READ_###`**. For the convenience purposes use in the ATC results table on the *Findngs* the context menu *Group By > Object* to group the issues by the ABAP source code objects where they occur. Then select the ABAP program **`ZTM260_MATERIAL_READ_###`** and use the context menu *Joule > Explain* on its first ATC finding. Read and understand the explanation provided by Joule along with proposed resolution steps.
 
     <br>![](/exercises/ex1/images/tm260_ex1_24_joule_atc_explain_1.png)
 
@@ -139,10 +145,6 @@ Joule will explain the business purpose and processing logic and will list all c
 
    Try out the Joule explanation of the SAP S/4HANA related ATC findings also for further findings of the ATC result.
    
-8. Now execute the chosen ABAP program **`ZTM260_MATERIAL_READ_###`** using the context menu *Run As > ABAP Application (F8)*. Enter the material number *123* for example and click on the *Execute* button. You will get the ABAP runtime errr, indicating, that there is a type conflict during a function module call. This is the S/4HANA related issue which must be fixed.
-
-    <br>![](/exercises/ex1/images/tm260_ex1_26_run_dump.png)
- 
  9. Let's now fix the ATC findings in the chosen ABAP program **`ZTM260_MATERIAL_READ_###`** using AI-based code fixes. For this select the second ATC finding (with the type-conflict check title) and use the context menu *Joule > Get Code Proposal*. Joule will use its /fix skill and present the AI-generated code proposal. Click the *Apply* button to show the code review diaog (FYI: the *Insert* button would insert the AI code proposal directly into the source code without code review dialog).
   
       <br>![](/exercises/ex1/images/tm260_ex1_26_joule_click_apply_qf.png)
@@ -193,7 +195,7 @@ Joule will explain the business purpose and processing logic and will list all c
    
    <br>![](/exercises/ex1/images/tm260_ex1_34_co_see_mcp_tools.png)
 
-11. Now use GitHub Copilot and ADT MCP ATC tools to check and adapt for SAP S/4HANA the ABAP program **`ZTM260_VBUK_SELECT_###`**. Open the GitHub Copilot using the menu *Copilot > Open Chat*. Select the ***Claude Opus 4.8 - Medium*** model in the GitHub Copilot.
+11. Now use GitHub Copilot and ADT MCP ATC tools to check and adapt for SAP S/4HANA the ABAP program **`ZTM260_VBUK_SELECT_###`**. Open the GitHub Copilot using the menu *Copilot > Open Chat*. Select the ***Claude Sonnet 5.0*** model in the GitHub Copilot.
     
    <br>![](/exercises/ex1/images/tm260_ex1_35_co_open_chat.png)
 
@@ -229,6 +231,38 @@ Now prompt the GitHub Copilot to apply the AI fix and provide the transport requ
 
    Try out to fix also further ATC findings from the ATC results table using GitHub Copilot and ADT MCP tools with a similar prompt as above.
    
+### Exercise 1.3 Automate your custom code migration using ABAP Custom Code Migration agent
+
+By following these steps you will first configure the MCP tools of the ABAP Custom Code Migration agent to be used by the GitHub Copilot. Then you will use ABAP Custom Code Migration agent to automate analysis and adaptation of your code samples for SAP S/4HANA.
+
+1. Use the menu *Window > Preferences*. Navigate to the *GitHub Copilot > Model Context Protocol* and enter the MCP Server configuration as follows.**🔴 Important - make sure that you enter the provided JSON code snippet to the right place and don't forget to put the comma before ADT MCP server configuration**. 
+
+    <br>![](/exercises/ex1/images/tm260_ex1_49_agent_config.png)
+    
+   Enter this code and copy and paste it before the ADT MCP server entry. Replace **`XXX`** with your location and group number.
+   
+   ```json
+    "ccm-agent-1": {
+      "url": "https://ccm-single-pod.c-932234c.kyma.ondemand.com/mcp",
+      "requestInit": {
+        "headers": {
+          "Authorization": "Bearer eyJqa3UiOiJodHRwczovL2FjYXM5NXd4OS5hY2NvdW50cy5vbmRlbWFuZC5jb20vb2F1dGgyL2NlcnRzIiwia2lkIjoic2hYSC1VWTRCOVdJUnlWbzJSLWcxb3BtNEFvIiwiYWxnIjoiUlMyNTYifQ.eyJpYXNfYXBpcyI6WyJjY20tc2luZ2xlLXBvZC1hcGkiXSwic3ViIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiYXVkIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiYXBwX3RpZCI6IjJlNGRjNjgwLTVmODUtNGI2ZS1iMjdkLTMwYjEyZDM2OGE3MCIsInNhcF9pZF90eXBlIjoiYXBwIiwiYXpwIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiaXNzIjoiaHR0cHM6Ly9hY2FzOTV3eDkuYWNjb3VudHMub25kZW1hbmQuY29tIiwiYXpwYWNyIjoiMSIsImV4cCI6MTc5MjYxMDQ0MiwiaWF0IjoxNzkyNTY3MjQyLCJqdGkiOiJlMTI5MzZlNy0xOGJlLTQ1ZTEtODFkMC0wY2ZmMDMyYzdhNmMifQ.oyzlfqngZpfg3l23NmgCkbEOlSTJ67Qt8xFxpo0lfbD5Tr1ffMhX0OyTfo38hYMkjsJOowlph9mw7jUlOkQ_ZeTLjNIyNDCjqxCq76VlAq4gvD1WC2jgz2c8BV3NS84qgRbK205WHx5Oa6KgkPoXILUjnEXfpp9ckqMoIsjb8mCi8OEUguhXPc-jZOkzMNgZNYux3w4Elo-q5EyKa7zfswDfoyun4CVfyGkeX07HC6dX4bc6-V2HapQcO4hXSIm-9hTESrqypXy-vukdhwuvaW9cn2hiKmL4p27UgRVeZA4DjLWVlrqkN3wnbPhLl0JrCEArIdDMm2ScwjAgzMW59B9kOaOKuTO3UNTtdG2DmRkdIoRNxSSBIiF3uHVmEqCfgaSEitOnzhDHys2j24v3Vu2yns0oH-QzdkE1Ozhc1-R2TgZe-iJaupxkPv8EddYJHFFvLj3mkPIROgcpGlzSmY5C4FL6YvFjz9F6uo-8jYVJ_PhDsngepsFQVwUTBhGcrQJo-u-JX9YowwIVQ8aCpGDuzK0xUDHEZUpCZ7rFmC-o04Fy5pGxxxDZcQOCH6NJf7pe88ftjOPPQsjGvk1-ItavvyyLNckR8AOlOqRbZi_ExuXZsyIeM8frgww0r5gx8wmWdp0GwdnNLwCJbW6vj9241sJC4XXMohDUSg7a38A",
+          "sap-adt-destination": "H4TECH_###"
+        }
+      }
+    },
+   ```
+   After that you will get below in the tools window the **ccm-agent-1** node displayed and can expand it to see all MCP tools, exposed by the MCP server for the agent. Click on the *Apply and Close* button. You have finished the MCP server configuration and can start using the MCP tools of the agent in the GitHub Copilot.
+   
+3. Go the GiHub Copilot chat and provide there the following prompt **Migrate the package **`ZTM260_EXERCISES_###`** using ATC check variant S4HANA_READINESS_2025**. Allow the **start_migration** MCP tool of the agent to run. Once migration is started, a new session id is issued for your agent session. Note it for your future requests. Now the agent started custom code migration, which will require some execution time. Meanwhile you can continue with the Exercise 2.
+   
+   <br>![](/exercises/ex1/images/tm260_ex1_50_agent_start.png)
+
+4. **Optional:** after some time you can ask the agent about the status of code migration by providing the following prompt in the GitHub Copilot chat: **show me the status of session *your agent session***. The agent will report back on the current status of code migration:
+
+    <br>![](/exercises/ex1/images/tm260_ex1_51_agent_check_status.png)
+
+
 ### Summary
 
 You've now got to know the AI-based capabilities of the Custom Code Migration app on SAP BTP for explanation of legacy code and S/4HANA related ATC issues and learned how to identify the issues which can be solved on your SAP ECC system via tranferable quick fixes. You have learned how to speed up your code adaptatíon on SAP S/4HANA system using Joule AI capabilities for code explanation, ATC finding explanation and code proposal (AI-based code fix), and how to automate mass adaptation of custom code for SAP S/4HANA by the ABAP Custom Code Migration agent.
