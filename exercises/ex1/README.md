@@ -246,7 +246,7 @@ By following these steps you will first configure the MCP tools of the ABAP Cust
       "url": "https://ccm-single-pod.c-932234c.kyma.ondemand.com/mcp",
       "requestInit": {
         "headers": {
-          "Authorization": "Bearer eyJqa3UiOiJodHRwczovL2FjYXM5NXd4OS5hY2NvdW50cy5vbmRlbWFuZC5jb20vb2F1dGgyL2NlcnRzIiwia2lkIjoic2hYSC1VWTRCOVdJUnlWbzJSLWcxb3BtNEFvIiwiYWxnIjoiUlMyNTYifQ.eyJpYXNfYXBpcyI6WyJjY20tc2luZ2xlLXBvZC1hcGkiXSwic3ViIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiYXVkIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiYXBwX3RpZCI6IjJlNGRjNjgwLTVmODUtNGI2ZS1iMjdkLTMwYjEyZDM2OGE3MCIsInNhcF9pZF90eXBlIjoiYXBwIiwiYXpwIjoiYmRjNjNjYTctNGU3MC00MzY3LWI0OGUtZGY0MmJlNThmNzQ0IiwiaXNzIjoiaHR0cHM6Ly9hY2FzOTV3eDkuYWNjb3VudHMub25kZW1hbmQuY29tIiwiYXpwYWNyIjoiMSIsImV4cCI6MTc5MjYxMDQ0MiwiaWF0IjoxNzkyNTY3MjQyLCJqdGkiOiJlMTI5MzZlNy0xOGJlLTQ1ZTEtODFkMC0wY2ZmMDMyYzdhNmMifQ.oyzlfqngZpfg3l23NmgCkbEOlSTJ67Qt8xFxpo0lfbD5Tr1ffMhX0OyTfo38hYMkjsJOowlph9mw7jUlOkQ_ZeTLjNIyNDCjqxCq76VlAq4gvD1WC2jgz2c8BV3NS84qgRbK205WHx5Oa6KgkPoXILUjnEXfpp9ckqMoIsjb8mCi8OEUguhXPc-jZOkzMNgZNYux3w4Elo-q5EyKa7zfswDfoyun4CVfyGkeX07HC6dX4bc6-V2HapQcO4hXSIm-9hTESrqypXy-vukdhwuvaW9cn2hiKmL4p27UgRVeZA4DjLWVlrqkN3wnbPhLl0JrCEArIdDMm2ScwjAgzMW59B9kOaOKuTO3UNTtdG2DmRkdIoRNxSSBIiF3uHVmEqCfgaSEitOnzhDHys2j24v3Vu2yns0oH-QzdkE1Ozhc1-R2TgZe-iJaupxkPv8EddYJHFFvLj3mkPIROgcpGlzSmY5C4FL6YvFjz9F6uo-8jYVJ_PhDsngepsFQVwUTBhGcrQJo-u-JX9YowwIVQ8aCpGDuzK0xUDHEZUpCZ7rFmC-o04Fy5pGxxxDZcQOCH6NJf7pe88ftjOPPQsjGvk1-ItavvyyLNckR8AOlOqRbZi_ExuXZsyIeM8frgww0r5gx8wmWdp0GwdnNLwCJbW6vj9241sJC4XXMohDUSg7a38A",
+          "Authorization": "Bearer <<TOKEN>>",
           "sap-adt-destination": "H4TECH_###"
         }
       }
