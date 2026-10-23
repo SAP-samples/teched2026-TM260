@@ -239,7 +239,7 @@ By following these steps you will first configure the MCP tools of the ABAP Cust
 
     <br>![](/exercises/ex1/images/tm260_ex1_49_agent_config.png)
     
-   Enter this code and copy and paste it before the ADT MCP server entry. Replace **`XXX`** with your location and group number.
+   Enter this code and copy and paste it before the ADT MCP server entry. Replace **`###`** with your location and group number.
    
    ```json
     "ccm-agent-1": {
