@@ -22,19 +22,19 @@ In this exercise, you get to know the SAP GUI-based ABAP program about the **Cle
 
 The ABAP program **Clean Core Planning** was implemented to display the clean core status of the custom objects in a package. By entering the package name you can display for each object in this package its current clean core level, the planned clean core level and provide comments about the current status. By following these steps you will get to know the ABAP program **Clean Core Planning** and use ATC to analyze it for clean core. You will also understand its clean core related ATC findings.
 
-1. Select the **`ZTM260_CLEAN_CORE_PLANNER_###`** program in your package **`ZTM260_EXERCISES_###`** and execute it using the context menu *Run As > ABAP application (F8)*. The package with custom code objects **ZTM260_CLEAN_CORE_SAMPLES** is provided automaticaly as input. Do not change the package name. Just click on the *Execute*.
+1. Select the **`ZTM260_CLEAN_CORE_PLANNER_###`** program in your package **`ZTM260_EXERCISES_###`** and execute it using the context menu *Run As > ABAP application (F8)*. The package with custom code objects **ZTM260_CLEAN_CORE_SAMPLES** is provided automatically as input. Do not change the package name. Just click on the *Execute*.
    
 <br>![](/exercises/ex2/images/tm260_ex2_1_run_cc_report.png)
 
-2.	The **Clean Core Planning** ABAP program displays the classes of the package along with their current clean core level (*Actual* column) and planned clean core level (*Planned* column). In the column *Date* the target date of the planned clean core level is provided. The comment in the *Comment* column provides more details about the current status of the clean core migration of an object to the target clean core level. Play around with the ABAP program to understand its features. Double click on dates, comments, responsble persons to change these data.
+2.	The **Clean Core Planning** ABAP program displays the classes of the package along with their current clean core level (*Actual* column) and planned clean core level (*Planned* column). In the column *Date* the target date of the planned clean core level is provided. The comment in the *Comment* column provides more details about the current status of the clean core migration of an object to the target clean core level. Play around with the ABAP program to understand its features. Double click on dates, comments, responsible persons to change these data.
 
 <br>![](/exercises/ex2/images/tm260_ex2_2_learn_cc_report.png)
    
-3. Execute clean core readiness checks by selecting the **`ZTM260_CLEAN_CORE_PLANNER_###`** ABAP program in your package, using the context menu *Run As > ABAP Test Cockpit with...* and providing the ATC check variant **ZTM260_CLEAN_CORE_READINESS** in the popup dialog. You will get the following clean core related ATC findings dispayed in the *ATC Problems* view:
+3. Execute clean core readiness checks by selecting the **`ZTM260_CLEAN_CORE_PLANNER_###`** ABAP program in your package, using the context menu *Run As > ABAP Test Cockpit with...* and providing the ATC check variant **ZTM260_CLEAN_CORE_READINESS** in the popup dialog. You will get the following clean core related ATC findings displayed in the *ATC Problems* view:
    
 <br>![](/exercises/ex2/images/tm260_ex2_3_run_atc_cc_report.png)
 
-4. Get familiar with all ATC clean core findings and their matching to the clean core level concept. For example updating of SAP tables (Update TADIR) leads to the ATC error, which corresponds to the clean core level D, selecting from SAP tables (Select TADIR) leads to the ATC warning and corresponds to the clean core level C, usage of classic APIs (cl_salv_events_table class of ALV Grid) leads to the ATC information message and coresponds to the clean core level B.
+4. Get familiar with all ATC clean core findings and their matching to the clean core level concept. For example updating of SAP tables (Update TADIR) leads to the ATC error, which corresponds to the clean core level D, selecting from SAP tables (Select TADIR) leads to the ATC warning and corresponds to the clean core level C, usage of classic APIs (cl_salv_events_table class of ALV Grid) leads to the ATC information message and corresponds to the clean core level B.
    
 <br>![](/exercises/ex2/images/tm260_ex2_4_check_atc_results_cc_report.png)
 
@@ -42,7 +42,7 @@ The ABAP program **Clean Core Planning** was implemented to display the clean co
 
 By following these steps you will use the GitHub Copilot and ADT MCP tools to solve the clean core related ATC errors and warnings and adapt your **Clean Core Planning** ABAP program to the clean core level B.
 
-1.	Go to the GitHub Copilot chat window. 🔴**IMPORTANT: select the ***Claude Sonnet 5.0*** model in the GitHub Copilot**. Provide the following prompt: **Check **`ZTM260_CLEAN_CORE_PLANNER_###`** with ATC variant ZTM260_CLEAN_CORE_READINESS**. The GitHub Copilot will use ADT MCP tools to run ATC with the ZTM260_CLEAN_CORE_READINESS check variant over your **`ZTM260_CLEAN_CORE_PLANNER_###`** ABAP program and will find out, that three ATC findings can be fixed using deterministic quick fixes. Prompt the GitHub Copilot to execute the quick fixes by providing the following (or similar) prompt **Apply the 3 deteministic quick fixes and use transport...**. You would need to create a new transport beforehand for the changes in the **`ZTM260_CLEAN_CORE_PLANNER_###`**. The GitHub Copilot will execute the quick fixes using the corresponding ADT MCP tool to fix the 3 clean core issues.
+1.	Go to the GitHub Copilot chat window. 🔴**IMPORTANT: select the ***Claude Sonnet 5.0*** model in the GitHub Copilot**. Provide the following prompt: **Check **`ZTM260_CLEAN_CORE_PLANNER_###`** with ATC variant ZTM260_CLEAN_CORE_READINESS**. The GitHub Copilot will use ADT MCP tools to run ATC with the ZTM260_CLEAN_CORE_READINESS check variant over your **`ZTM260_CLEAN_CORE_PLANNER_###`** ABAP program and will find out, that three ATC findings can be fixed using deterministic quick fixes. Prompt the GitHub Copilot to execute the quick fixes by providing the following (or similar) prompt **Apply the 3 deterministic quick fixes and use transport...**. You would need to create a new transport beforehand for the changes in the **`ZTM260_CLEAN_CORE_PLANNER_###`**. The GitHub Copilot will execute the quick fixes using the corresponding ADT MCP tool to fix the 3 clean core issues.
 
 <br>![](/exercises/ex2/images/tm260_ex2_5_fix_atc_copilot.png)
 
@@ -62,12 +62,12 @@ By following these steps you will use the GitHub Copilot and ADT MCP tools to so
 
 <br>![](/exercises/ex2/images/tm260_ex2_7_rerun_atc.png)
    
-6. You have succefully adapted the ABAP Program about the **Clean Core Planning** to the clean core level B. Verify, that the ABAP program **`ZTM260_CLEAN_CORE_PLANNER_###`** still works correctly by executing it using the context menu *Run As.. > ABAP Program (F8)*
+6. You have successfully adapted the ABAP Program about the **Clean Core Planning** to the clean core level B. Verify, that the ABAP program **`ZTM260_CLEAN_CORE_PLANNER_###`** still works correctly by executing it using the context menu *Run As.. > ABAP Program (F8)*
    
 
 ### Summary
 
-You have now learned how to use ATC with the clean core related check variant in ADT to analyze your custom code in the SAP S/4HANA system for clean core and understand clean core issues. Finally you used GiHub Copilot and ADT MCP tools to solve clean core issues in your ABAP program and adopted it to the clean core level B.
+You have now learned how to use ATC with the clean core related check variant in ADT to analyze your custom code in the SAP S/4HANA system for clean core and understand clean core issues. Finally you used GitHub Copilot and ADT MCP tools to solve clean core issues in your ABAP program and adapted it to the clean core level B.
 
 Continue to - [Exercise 3 - Modernize your SAPGUI application about clean core planning with RAP and SAP Fiori UI](../ex3/README.md)
 

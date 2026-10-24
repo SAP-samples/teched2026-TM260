@@ -45,7 +45,7 @@ ABAP Backend System
   </tr>
   <tr>
     <td>Exercise Package</td>
-    <td>ZTM260_EXERCISES_### <br><i>Don't forget to replace all occurences of the placeholder ### with your assigned location and group number.</i></td>
+    <td>ZTM260_EXERCISES_### <br><i>Don't forget to replace all occurrences of the placeholder ### with your assigned location and group number.</i></td>
   </tr>
    <tr>
     <td>Solution Package</td>
@@ -65,7 +65,7 @@ SAP Business AI, ABAP environment system
   </tr>
   <tr>
     <td>User</td>
-    <td>TM260-###@education.cloud.sap<br><i>Don't forget to replace all occurences of the placeholder ### with your assigned group number.</i></td>
+    <td>TM260-###@education.cloud.sap<br><i>Don't forget to replace all occurrences of the placeholder ### with your assigned group number.</i></td>
   </tr>
   <tr>
     <td>Password</td>

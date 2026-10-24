@@ -1,6 +1,6 @@
 # Exercise 3 - Modernize your SAP GUI-based ABAP program about clean core planning with RAP and SAP Fiori UI
 
-In this exercise, you will moderinize the SAP GUI-based ABAP program about the **Clean Core Planning** from the Exercise 2 with SAP Fiori UI and RAP. You will use the GitHub Copilot and ADT MCP tools to generate the new modern SAP Fiori and RAP-based application on existing persistency of the clean core planning application.
+In this exercise, you will modernize the SAP GUI-based ABAP program about the **Clean Core Planning** from the Exercise 2 with SAP Fiori UI and RAP. You will use the GitHub Copilot and ADT MCP tools to generate the new modern SAP Fiori and RAP-based application on existing persistency of the clean core planning application.
 
 ### 🔴 Important Information
 

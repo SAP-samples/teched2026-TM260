@@ -1,6 +1,6 @@
 # Exercise 4 - Analyze custom code adaptation results of the ABAP Custom Code Migration agent
 
-In this exercise you will obtain the final custom code migration results from the ABAP Custom Code Migration agent for furher user review.
+In this exercise you will obtain the final custom code migration results from the ABAP Custom Code Migration agent for further user review.
 
 1. Meanwhile the ABAP Custom Code Migration agent started in the Exercise 1 already finished the custom code migration and can be asked for the final report. Go to the GitHub Copilot chat and provide the following prompt: **show me the status of session *your session ID***. Use your agent session noted in the Exercise 1. The agent provides the final report.
 
@@ -18,7 +18,7 @@ In this exercise you will obtain the final custom code migration results from th
 
     The next recommended steps for the custom code migration developer are to accept the code change proposals with high confidence score and activate the related custom code objects. Then review the code proposals with medium and low confidence score and adjust them before applying the changes or revert back if the code changes are not acceptable.
  
- 4. After reviewing then changes in the *Transport Viewer* fine tune the code changes and activate them. For this open every ABAP program in the editor in change mode and activate the changes. Again a transport task will be created for your change.
+ 4. After reviewing the changes in the *Transport Viewer* fine tune the code changes and activate them. For this open every ABAP program in the editor in change mode and activate the changes. Again a transport task will be created for your change.
     
  5. Trigger ATC run again over your package using the context menu *Run As > ABAP Test Cockpit with ...* and use the S4HANA READINESS_2025 check variant. There will be still a few findings in the ATC result table, because they are false positives and cannot be detected correctly by the ATC check. Use the context menu *Apply Pseudo Comment* menu on every finding. After you finished that rerun the ATC again. The *ATC Problems View* should now show no findings.
 
