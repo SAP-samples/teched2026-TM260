@@ -17,7 +17,11 @@ In this exercise, you will modernize the SAP GUI-based ABAP program about the **
 
 By following these steps you will use GitHub Copilot and ADT MCP tools to create the CDS view for reading the data of the SAP GUI ABAP program for **Clean Core Planning** .
 
-1. Ask the GitHub Copilot in chat to generate the CDS view by providing the following prompt: **Create a CDS view based on the view I_CUSTABAPOBJDIRECTORYENTRY and join the data from table **`ZTM260_CCP_###`**. Use the package **`ZTM260_EXERCISES_###`**. Use the naming convention ZTM260 at the beginning and the number _### at the end**. The GitHub Copilot will use the ADT MCP tools and create and activate the CDS view. 
+1. Ask the GitHub Copilot in chat to generate the CDS view by providing the following prompt:
+   ```Chat Prompt
+   Create a CDS view based on the view I_CUSTABAPOBJDIRECTORYENTRY and join the data from table `ZTM260_CCP_###`. Use the package `ZTM260_EXERCISES_###`. Use the naming convention ZTM260 at the beginning and the number _### at the end.
+   ```
+   The GitHub Copilot will use the ADT MCP tools and create and activate the CDS view. 
 
    <br>![](/exercises/ex3/images/tm260_ex3_1_generate_cds_view.png)
    
@@ -29,7 +33,13 @@ By following these steps you will use GitHub Copilot and ADT MCP tools to create
 
 By following these steps you will use the GitHub Copilot and ADT MCP tools to generate a new modern SAP Fiori and RAP-based application.
 
-1. Go to your GitHub Copilot chat and provide the following prompt: **Based on the CDS view **`ZTM260_CCP_JOIN_###`** create a simple RAP application in the package **`ZTM260_EXERCISES_###`** which displays the data of the view in a Master details Pattern UI. Use the naming convention of the view: all artifacts begin with ZTM260_ and end with **`_###`**.**. The GitHub Copilot will generate the SAP Fiori and RAP-based application using the ADT MCP tools:
+1. Go to your GitHub Copilot chat and provide the following prompt: 
+   
+   ```Chat Prompt
+   Based on the CDS view `ZTM260_CCP_JOIN_###` create a simple RAP application in the package `ZTM260_EXERCISES_###` which displays the data of the view in a Master details Pattern UI. Use the naming convention of the view: all artifacts begin with ZTM260_ and end with `_###`.
+   ```
+   The GitHub Copilot will generate the SAP Fiori and RAP-based application using the ADT MCP tools:
+
 
    <br>![](/exercises/ex3/images/tm260_ex3_3_gen_rap_app.png)
    
