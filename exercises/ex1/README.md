@@ -1,9 +1,23 @@
-# Exercise 1 - Migrate your custom code from SAP ECC to SAP S/4HANA using SAP Joule for Developers, ABAP AI capabilities
+# 1. Exercise 1 - Migrate your custom code from SAP ECC to SAP S/4HANA using SAP Joule for Developers, ABAP AI capabilities
 
-### Scenario Overview
+## 1.1. Exercises
+<!-- TOC -->
+
+- [1. Exercise 1 - Migrate your custom code from SAP ECC to SAP S/4HANA using SAP Joule for Developers, ABAP AI capabilities](#1-exercise-1---migrate-your-custom-code-from-sap-ecc-to-sap-s4hana-using-sap-joule-for-developers-abap-ai-capabilities)
+  - [1.1. Exercises](#11-exercises)
+    - [1.1.1. Scenario Overview](#111-scenario-overview)
+  - [1.2. 🔴 Important Information](#12--important-information)
+    - [1.2.1. Exercise 1.1 Use Custom Code Migration app on SAP BTP to analyze your code in SAP ECC system for SAP S/4HANA](#121-exercise-11-use-custom-code-migration-app-on-sap-btp-to-analyze-your-code-in-sap-ecc-system-for-sap-s4hana)
+    - [1.2.2. Exercise 1.2 Analyze and adapt your code on SAP S/4HANA system using AI capabilities](#122-exercise-12-analyze-and-adapt-your-code-on-sap-s4hana-system-using-ai-capabilities)
+    - [1.2.3. Exercise 1.3 Automate your custom code migration using ABAP Custom Code Migration agent](#123-exercise-13-automate-your-custom-code-migration-using-abap-custom-code-migration-agent)
+    - [1.2.4. Summary](#124-summary)
+
+<!-- /TOC -->
+
+### 1.1.1. Scenario Overview
 In this exercise you will learn how to speed up understanding of the custom code in an SAP ECC system and the issues, which must be resolved in your custom code during SAP S/4HANA conversion. Thereby you will utilize the Custom Code Migration app on SAP BTP and the AI-based skills to understand the code and the SAP S/4HANA related ABAP test cockpit (ATC) issues. You will also find out the issues which can be solved already on your SAP ECC system and learn how to fix them. Next you will use the ABAP development tools for Eclipse (ADT) for code analysis and adaptation on SAP S/4HANA system. Thereby you will utilize SAP Joule for Developers, ABAP AI capabilities to understand the custom code, the findings of the ATC check run for S/4HANA readiness and get code proposals for AI-based code fixes. After that you utilize the ADT MCP tools to apply AI-based code fixes. Finally you will use the ABAP Custom Code Migration agent on SAP Business AI Platform to automate your custom code migration to SAP S/4HANA compliant code.
 
-## 🔴 Important Information
+## 1.2. 🔴 Important Information
 
 > **📌 Note**   
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
@@ -13,8 +27,7 @@ In this exercise you will learn how to speed up understanding of the custom code
 > * ZTM260_EXERCISES_**0##** → **41** → **80** → **SAP TechEd Berlin, October 29, 2026**  (e.g ``ZTM260_EXERCISES_079``)
 > * ZDT260_EX_**1##** → **100** → **170** → **ASUG TechConnect**  (e.g ``ZTM260_EXERCISES_119``)
 
-
-### Exercise 1.1 Use Custom Code Migration app on SAP BTP to analyze your code in SAP ECC system for SAP S/4HANA
+### 1.2.1. Exercise 1.1 Use Custom Code Migration app on SAP BTP to analyze your code in SAP ECC system for SAP S/4HANA
 
 By following these steps you will get to know the Custom Code Migration app on SAP BTP using the existing custom code migration project for SAP S/4HANA analysis of custom code of the SAP ECC system. You will use the AI-based code explanation to understand the business purpose of the ABAP programs and AI-based explanation to understand the issues of the SAP S/4HANA related ATC custom code findings.
 
@@ -93,7 +106,7 @@ By following these steps you will get to know the Custom Code Migration app on S
    
    Please find more details about transferable quick fixes in the blog post [Automated custom code adaptation for SAP S/4HANA and SAP HANA on your SAP ECC system](https://community.sap.com/t5/technology-blog-posts-by-sap/automated-custom-code-adaptation-for-sap-s-4hana-and-sap-hana-on-your-sap/ba-p/14461544).
 
-### Exercise 1.2 Analyze and adapt your code on SAP S/4HANA system using AI capabilities
+### 1.2.2. Exercise 1.2 Analyze and adapt your code on SAP S/4HANA system using AI capabilities
 
 By following these steps you will first run ATC to analyze your custom code package for SAP S/4HANA. Then you will use the Joule explain capability to understand the logic of some sample ABAP programs, use the Joule ATC finding explain capability to understand the issues of the ATC check run, use the Joule code proposal capability to suggest the AI based code fixes. Finally you will utilize ADT MCP tools to analyze your code samples and apply AI based code fixes.
 
@@ -231,7 +244,7 @@ Now prompt the GitHub Copilot to apply the AI fix and provide the transport requ
 
    Try out to fix also further ATC findings from the ATC results table using GitHub Copilot and ADT MCP tools with a similar prompt as above.
    
-### Exercise 1.3 Automate your custom code migration using ABAP Custom Code Migration agent
+### 1.2.3. Exercise 1.3 Automate your custom code migration using ABAP Custom Code Migration agent
 
 By following these steps you will first configure the MCP tools of the ABAP Custom Code Migration agent to be used by the GitHub Copilot. Then you will use ABAP Custom Code Migration agent to automate analysis and adaptation of your code samples for SAP S/4HANA.
 
@@ -263,7 +276,7 @@ By following these steps you will first configure the MCP tools of the ABAP Cust
     <br>![](/exercises/ex1/images/tm260_ex1_51_agent_check_status.png)
 
 
-### Summary
+### 1.2.4. Summary
 
 You've now got to know the AI-based capabilities of the Custom Code Migration app on SAP BTP for explanation of legacy code and S/4HANA related ATC issues and learned how to identify the issues which can be solved on your SAP ECC system via transferable quick fixes. You have learned how to speed up your code adaptation on SAP S/4HANA system using Joule AI capabilities for code explanation, ATC finding explanation and code proposal (AI-based code fix), and how to automate mass adaptation of custom code for SAP S/4HANA by the ABAP Custom Code Migration agent.
 Continue to - [Exercise 2 - Adapt your custom code to clean core.](../ex2/README.md)
