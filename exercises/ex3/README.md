@@ -2,14 +2,24 @@
 
 In this exercise, you will modernize the SAP GUI-based ABAP program about the **Clean Core Planning** from the Exercise 2 with SAP Fiori UI and RAP. You will use the GitHub Copilot and ADT MCP tools to generate the new modern SAP Fiori and RAP-based application on existing persistency of the clean core planning application.
 
-### 🔴 Important Information
+## Exercises
+<!-- TOC -->
+
+- [Exercise 3 - Modernize your SAP GUI-based ABAP program about clean core planning with RAP and SAP Fiori UI](#exercise-3---modernize-your-sap-gui-based-abap-program-about-clean-core-planning-with-rap-and-sap-fiori-ui)
+  - [Exercises](#exercises)
+  - [🔴 Important Information](#-important-information)
+    - [Exercise 3.1 Use GitHub Copilot and ADT MCP tools to create CDS View for the data of the Clean Core Planning ABAP program](#exercise-31-use-github-copilot-and-adt-mcp-tools-to-create-cds-view-for-the-data-of-the-clean-core-planning-abap-program)
+    - [Exercise 3.2 Use GitHub Copilot and ADT MCP tools to generate a modern SAP Fiori- and RAP-based Clean Core Planning application on top of the CDS view](#exercise-32-use-github-copilot-and-adt-mcp-tools-to-generate-a-modern-sap-fiori--and-rap-based-clean-core-planning-application-on-top-of-the-cds-view)
+    - [Summary](#summary)
+
+<!-- /TOC -->
+
+## 🔴 Important Information
 
 > **📌 Note**   
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZTM260_EXERCISES_**0##** → **01** → **40** → **SAP TechEd Berlin, October 27, 2026**  (e.g ``ZTM260_EXERCISES_019``)
-> * ZTM260_EXERCISES_**0##** → **41** → **80** → **SAP TechEd Berlin, October 29, 2026**  (e.g ``ZTM260_EXERCISES_079``)
 > * ZDT260_EX_**1##** → **100** → **170** → **ASUG TechConnect**  (e.g ``ZTM260_EXERCISES_119``)
 
 
