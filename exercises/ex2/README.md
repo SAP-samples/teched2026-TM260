@@ -1,5 +1,18 @@
 # Exercise 2 - Adapt your custom code to clean core
 
+## Exercises
+<!-- TOC -->
+
+- [Exercise 2 - Adapt your custom code to clean core](#exercise-2---adapt-your-custom-code-to-clean-core)
+  - [Exercises](#exercises)
+    - [🔴 Important Information](#-important-information)
+    - [Exercise 2.1 Get to know the ABAP program about clean core planning and understand the clean core issues](#exercise-21-get-to-know-the-abap-program-about-clean-core-planning-and-understand-the-clean-core-issues)
+    - [Exercise 2.2 Use GitHub Copilot and ADT MCP tools to migrate the ABAP program about clean core planning to clean core level B](#exercise-22-use-github-copilot-and-adt-mcp-tools-to-migrate-the-abap-program-about-clean-core-planning-to-clean-core-level-b)
+    - [Summary](#summary)
+
+<!-- /TOC -->
+
+
 The clean core level concept, outlined in the Clean Core Extensibility [Clean Core Extensibility](https://www.sap.com/documents/2024/09/20aece06-d87e-0010-bca6-c68f7e60039b.html) whitepaper allows you stepwise transformation to clean core at your own pace.
 
 This overview explains how ABAP test cockpit supports the clean core level concept.
@@ -14,8 +27,6 @@ In this exercise, you get to know the SAP GUI-based ABAP program about the **Cle
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZTM260_EXERCISES_**0##** → **01** → **40** → **SAP TechEd Berlin, October 27, 2026**  (e.g ``ZTM260_EXERCISES_019``)
-> * ZTM260_EXERCISES_**0##** → **41** → **80** → **SAP TechEd Berlin, October 29, 2026**  (e.g ``ZTM260_EXERCISES_079``)
 > * ZDT260_EX_**1##** → **100** → **170** → **ASUG TechConnect**  (e.g ``ZTM260_EXERCISES_119``)
 
 ### Exercise 2.1 Get to know the ABAP program about clean core planning and understand the clean core issues

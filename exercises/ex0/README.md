@@ -2,14 +2,19 @@
 
 Here you will get general information about the systems and development environment for your exercises 1-3
 
+## Exercises
+- [Getting Started](#getting-started)
+  - [Exercises](#exercises)
+  - [🔴 Important Information](#-important-information)
+  - [Introduction](#introduction)
+  - [🔐 System and Logon Information](#-system-and-logon-information)
+
 ## 🔴 Important Information
 
 > **📌 Note**    
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZTM260_EXERCISES_**0##** → **01** → **40** → **SAP TechEd Berlin, October 27, 2026**  (e.g ``ZTM260_EXERCISES_019``)
-> * ZTM260_EXERCISES_**0##** → **41** → **80** → **SAP TechEd Berlin, October 29, 2026**  (e.g ``ZTM260_EXERCISES_079``)
 > * ZDT260_EX_**1##** → **100** → **170** → **ASUG Tech Connect**  (e.g ``ZTM260_EXERCISES_119``)
 
 

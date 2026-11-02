@@ -1,3 +1,12 @@
+
+# Exercises
+<!-- TOC -->
+
+- [Exercises](#exercises)
+- [Exercise 4 - Analyze custom code adaptation results of the ABAP Custom Code Migration agent](#exercise-4---analyze-custom-code-adaptation-results-of-the-abap-custom-code-migration-agent)
+
+<!-- /TOC -->
+
 # Exercise 4 - Analyze custom code adaptation results of the ABAP Custom Code Migration agent
 
 In this exercise you will obtain the final custom code migration results from the ABAP Custom Code Migration agent for further user review.
